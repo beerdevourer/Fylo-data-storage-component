@@ -1,0 +1,418 @@
+.attribution { color: white; font-size: 11px; position: absolute; bottom: 0; left:0; right: 0; margin-left: auto;
+    margin-right: auto; text-align: center;}
+.attribution a { color: hsl(295, 59%, 62%); }
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.bg {
+    z-index: -1;
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 100vh;  
+    background-size: 100%;
+    background-position: bottom;
+    background-image: url(../images/bg-desktop.png);
+    background-color: hsl(229, 57%, 11%);
+    min-height: 300px;
+}
+
+@media (max-width: 767px) {
+    .bg {
+        background-size:cover;
+        background-image: url(../images/bg-mobile.png);
+        background-position: top bottom;
+    }
+}
+
+.cont1 {
+    margin-right: 0;
+    margin-left: auto;
+    /* background-color: red; */
+}
+
+.cont2 {
+    position: relative;
+    margin-left: 1.6%;
+    margin-right: auto;
+
+}
+
+.sc {
+    height: 100vh;
+
+}
+
+.content-grid {
+        padding-top: 30vh;
+}
+
+
+
+.fylo-design {  
+    position: relative;
+    height: 24vh;
+    width: 100%;
+    min-height: 180px;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 1rem 8rem 1rem 1rem;
+    padding-top: 1%;
+    box-shadow: 0px 5px 20px 0px rgb(22, 18, 44);
+}
+
+.fylo-box {
+    height:90%; 
+    width:74%; 
+    margin-top: 10px;
+}
+
+.icon-bg {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: .7rem;
+}
+
+.icons {
+    margin: 0 auto;
+}
+
+.bot-row {
+    position: absolute;
+    bottom: 30%;
+    left:20%;
+}
+
+.top-row {
+    left: 20.5%;
+    top:20%;
+    position: absolute;
+}
+
+@media (max-width: 1400px) {
+    .bot-row {
+        left:10%;   
+    }
+    .top-row {
+        left:10.5%;
+        }
+}
+
+@media (max-width: 1100px) {
+    .bot-row {
+        left:5%;   
+    }
+
+    .icon-bg {
+        height: 40px;
+        width: 40px;
+    }
+
+    .icons {
+        height: 40%;
+    }
+    .top-row {
+        left:5.5%;
+    }
+    .logo-i {
+         margin-left: 5px;
+        height: 4vh;
+    }
+    .col-4 {
+        padding: 0 5px;
+    }
+    .bot-row {
+        left: 12%;
+    }
+}
+
+.storage-skeleton {
+    bottom: 0%;
+    left:0;
+    position: absolute;
+    height: 20vh;
+    width: 100%;
+    min-height: 130px;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 1rem;
+    box-shadow: 0px 5px 20px 0px rgb(22, 18, 44);
+}
+
+.progression-bar {
+    z-index: 2;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    width: 86%;
+    height: 20px;
+    background-color: hsl(231, 59%, 18%);
+    border-radius: 1rem;
+}
+
+.bar-content {
+    margin-left: 3px;
+    width: 80%;
+    height: 80%;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.white-ball {
+    height: 80%;
+    aspect-ratio: 1;
+    background-color: #fff;
+    z-index: 5;
+    border-radius: 100%;
+    margin: 0 2px 0.3% 0;
+    cursor: pointer;
+}
+
+.message {
+    bottom: 35px;
+    left:7%;
+    width: 32%;
+    margin: 0   auto;
+    background: white;
+    padding: 8px 16px;
+    text-align: center;
+    position:relative;
+    border-radius: 1rem 1rem 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    right:0;
+  }
+
+.triangle:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid white;
+    border-top: 10px solid white;
+    border-bottom: 10px solid transparent;
+    right: 0px;
+    bottom: -19px;
+}
+
+.message h3 {
+    font-family: 'Raleway', sans-serif;
+    color: hsl(229, 57%, 11%);
+    font-weight: 700;
+    font-size: 2.6rem;
+}
+
+.message p {
+    color: hsl(229, 7%, 55%); 
+    margin: 0 5% 0;  
+    font-weight: 700;
+    font-size: 0.7rem;
+    letter-spacing: 1.2px;
+}
+
+.used-space {
+    color: hsl(243, 100%, 93%);
+}
+
+.used-space h6 {
+    position: relative;
+    top: 74%    ;
+    left: 18%;
+}
+
+.top-storage-container {
+    display: flex;
+    text-align: center;
+}
+
+.middle-storage-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.bottom-storage-container {
+    margin: 1% 0 0 0;
+    font-weight: 600;
+    color: hsl(243, 100%, 93%);
+}
+
+
+.bar-start-text {
+    display: inline-block;
+    position: relative;
+    left:7%
+}
+
+.bar-end-text {
+    display: inline-block;
+    position: relative;
+    left: 77%;
+}
+
+@media (max-width:1574px) {
+    .bar-start-text {
+        left: 7.2%;
+    }
+    .bar-end-text {
+        left: 72.5%;
+    }
+    .used-space h6{
+        left:13.6%;
+    }
+    .message {
+        left: -10px;
+    }
+
+    .message h3 {
+        font-size: 2rem;
+    }
+
+    .message p {
+        font-size: 0.6rem;
+    }
+
+    .progression-bar {
+        height: 18px;
+    }
+}
+
+@media (max-width:1146px) {
+    .bar-start-text {
+        left: 7.4%;
+        font-size: 0.8rem;
+    }
+    .bar-end-text {
+        left: 68.5%;
+        font-size: 0.8rem;
+    }
+    .used-space h6{
+        left:13.6%;
+        font-size: 0.8rem;
+    }
+    .message {
+        left: -14px;
+    }
+    .progression-bar {
+        height: 16px;
+    }
+
+    .white-ball{
+        margin: 0 2px 2px 0;
+    }
+
+}
+
+@media (max-width:916px) {
+    .bar-start-text {
+        left: 7.4%;
+        font-size: 0.7rem;
+    }
+    .bar-end-text {
+        left: 68.5%;
+        font-size: 0.7rem;
+    }
+    .used-space h6{
+        left:13.6%;
+        font-size: 0.6rem;
+    }
+    .message {
+        left: 1%;
+    }
+    .message h3 {
+        font-size: 1.4rem;
+    }
+    .message p {
+        font-size: 0.5rem;
+    }
+    .progression-bar {
+        height: 12px;
+    }
+
+    .white-ball{
+        margin: 0 2px 2px 0;
+    }
+    .storage-skeleton {
+        min-height: 130px;
+        height: 12vh;
+        border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
+    }
+
+    .fylo-design { 
+        height: 16vh;
+        border-radius: 0.8rem 6rem 0.8rem 0.8rem;
+    }
+}
+
+@media (max-width:767px) {
+    .storage-skeleton {
+        top:-8vh;
+        width: 60vw;
+        height: 30vh;
+        position: relative;
+        margin: 0 1.5vw 0 0;
+    }
+    .storage-container {
+        display: flex;
+        justify-content: center;
+    }
+    .triangle:before {
+        border: transparent;
+    }
+    .message {
+        border-radius: 1rem;
+        right: 0;
+        left: 0;
+        margin-right: 0;
+        margin-left: 0; 
+        top: 11vh;
+    }
+    .used-space h6{
+        left:13.6%;
+        font-size: 1rem;
+    }
+    .used-space {
+        right: auto;
+        left:7vw;
+        margin-right: 0;
+        margin-left: 0;
+        position: relative;
+    }
+    .fylo-design {      
+        width: 60vw; 
+        height: 30vh;
+        border-radius: 0.8rem 6rem 0.8rem 0.8rem;
+        margin: 0;
+        bottom: 10vh;
+    }
+    .cont1 {
+        display: flex;
+        justify-content: center;
+    }
+    .logo-i {
+        margin-left: 2.5vw;
+        height: 6vh;
+   }
+   .icon-bg {
+    height: 60px;
+    width: 60px;
+}
+
+    .icons {
+    height: 40%;
+    }
+    .col-4 {
+        padding: 0 10px;
+    }
+}
